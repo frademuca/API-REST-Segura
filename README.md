@@ -77,7 +77,7 @@ Put Vehiculo - Actualiza un vehículo existente
 Delete Vehículo - Elimina un vehículo existente
 
 
-### LÓGICA DE NEGOCIO: **************
+### LÓGICA DE NEGOCIO:
 Obtener todos los usuarios, visitas y vehículos.
 Buscar usuario por idUsuario, Username, DNI, teléfono, email, rol e idVisita.
 Insertar nuevo usuario.
@@ -92,7 +92,7 @@ Actualizar un vehículo existente.
 Elimina un vehículo existente.
 
 
-### EXCEPCIONES: **************
+### EXCEPCIONES:
 **ÉXITO:**
 OK : 200 -> Operación correcta
 Created : 201 -> Inserción exitosa
@@ -106,7 +106,7 @@ Duplicate : 409 -> Recurso duplicado
 APIHandler : 400, 404, 500 -> Múltiples errores en la API
 
 
-### RESTRICCIONES DE SEGURIDAD: **************
+### RESTRICCIONES DE SEGURIDAD:
 SecurityFilterChain(HttpSecurity http): Configura los filtros de seguridad para deshabilitación de CSRF y  usar la autenticación con JWT
 passwordEncoder(): Codificación segura de contraseñas con BCrypt.
 authenticationManager(AuthenticationConfiguration authenticationConfiguration): Manejador central de autenticaciones.
